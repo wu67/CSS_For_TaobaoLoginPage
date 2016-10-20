@@ -1,8 +1,17 @@
-/*   页面主体,一个毛玻璃框+盒阴影 */
+/*     登录页背景图片 */
+div.login-newbg {
+    background-image: url("http://img.wallpaperfolder.com/f/4A7157C443C4/raquo-blog-archive-el.jpg") !important;
+}
+
+/*   页面主体,缩小+移位+毛玻璃框+盒阴影 */
 div.content-layout {
-    /*    background-color: red; */
-    background: hsla(0, 0%, 100%, 0.5);
-    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    border-radius: 2em;
+    width: 900px !important;
+    height: 500px !important;
+    position: absolute;
+    top: 50px;
 }
 
 div.content-layout::before {
@@ -18,19 +27,20 @@ div.content-layout::before {
 /*   扩宽登录表单容器并更改其位置 */
 .login-box-warp {
     width: 650px;
-    top: 55px;
-    right: 200px;
+    top: 60px;
+    right: 120px;
 }
 
 #J_LoginBox {
+    border-radius: 1em;
     position: absolute;
     width: 650px;
-    background-color: #fff;
-    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    padding-bottom: 7px;
 }
 
-/*   覆盖在背景上的广域广告链接，登录提示，二维码与账号密码的切换按钮 */
-.login-adlink, .login-tip, #J_Quick2Static, #J_Static2Quick {
+/*   覆盖在背景上的广域广告链接，登录提示，二维码与账号密码的切换按钮，二维码下方的'密码登录'和'注册'链接 */
+.login-adlink, .login-tip, #J_Quick2Static, #J_Static2Quick, div.login-links:nth-child(5) {
     display: none !important;
 }
 
@@ -45,8 +55,4 @@ div.content-layout::before {
     position: absolute;
     top: 0;
     right: 0;
-}
-/*二维码下方的'密码登录'和'注册'链接*/
-div.login-links:nth-child(5) {
-    display: none;
 }
