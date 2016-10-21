@@ -1,58 +1,62 @@
-/*     登录页背景图片 */
-div.login-newbg {
-    background-image: url("http://img.wallpaperfolder.com/f/4A7157C443C4/raquo-blog-archive-el.jpg") !important;
-}
+@-moz-document domain("login.taobao.com") {
+    /*     登录页背景图片 */
+    div.login-newbg {
+        background-image: url("http://img.wallpaperfolder.com/f/4A7157C443C4/raquo-blog-archive-el.jpg") !important;
+    }
 
-/*   页面主体,缩小+移位+毛玻璃框+盒阴影 */
-div.content-layout {
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
-    border-radius: 2em;
-    width: 900px !important;
-    height: 500px !important;
-    position: absolute;
-    top: 50px;
-}
+    /*   页面主体,缩小+移位+毛玻璃框+盒阴影 */
+    div.content-layout {
+        background: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+        border-radius: 2em;
+        width: 900px !important;
+        height: 490px !important;
+        position: absolute;
+        top: 45px;
+    }
 
-div.content-layout::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    filter: blur(20px);
-}
+    div.content-layout::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        filter: blur(20px);
+    }
 
-/*   扩宽登录表单容器并更改其位置 */
-.login-box-warp {
-    width: 650px;
-    top: 60px;
-    right: 120px;
-}
+    /*   扩宽登录表单容器并更改其位置 */
+    .login-box-warp {
+        width: 650px;
+        top: 60px;
+        right: 120px;
+    }
 
-#J_LoginBox {
-    border-radius: 1em;
-    position: absolute;
-    width: 650px;
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
-    padding-bottom: 6px;
-}
+    #J_LoginBox {
+        border-radius: 1em;
+        position: absolute;
+        width: 650px;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+        padding-bottom: 7px;
+    }
 
-/*   覆盖在背景上的广域广告链接，登录提示，二维码与账号密码的切换按钮，二维码下方的'密码登录'和'注册'链接 */
-.login-adlink, .login-tip, #J_Quick2Static, #J_Static2Quick, div.login-links:nth-child(5) {
-    display: none !important;
-}
+    /*   覆盖在背景上的广域广告链接，登录提示，二维码与账号密码的切换按钮，二维码下方的'密码登录'和'注册'链接 */
+    .login-adlink, .login-tip, #J_Quick2Static, #J_Static2Quick, div.login-links:nth-child(5) {
+        display: none !important;
+    }
 
-/*   显示账号密码登陆 */
-#J_StaticForm {
-    display: inline-block !important;
-}
+    /*   显示账号密码登陆 */
+    #J_StaticForm {
+        display: inline-block !important;
+        padding-right: 35px;
+        border-right-style: dashed;
+    }
 
-/*   将二维码登录移动至容器右上角 */
-.quick-form {
-    width: 300px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    /*   将二维码登录移动至容器右上角 */
+    .quick-form {
+        width: 300px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
