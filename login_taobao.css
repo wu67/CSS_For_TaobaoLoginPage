@@ -36,7 +36,7 @@ div.content-layout::before {
     position: absolute;
     width: 650px;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, .3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
-    padding-bottom: 7px;
+    padding-bottom: 6px;
 }
 
 /*   覆盖在背景上的广域广告链接，登录提示，二维码与账号密码的切换按钮，二维码下方的'密码登录'和'注册'链接 */
