@@ -41,7 +41,10 @@
     }
 
     /*   覆盖在背景上的广域广告链接，登录提示，二维码与账号密码的切换按钮，二维码下方的'密码登录'和'注册'链接 */
-    .login-adlink, .login-tip, #J_Quick2Static, #J_Static2Quick, div.login-links:nth-child(5) {
+    .login-adlink,
+    .login-tip,
+    #J_Quick2Static,
+    div.login-links:nth-child(5) {
         display: none !important;
     }
 
@@ -56,7 +59,7 @@
     .quick-form {
         width: 300px;
         position: absolute;
-        top: 0;
+        top: 20px;
         right: 0;
     }
 }
