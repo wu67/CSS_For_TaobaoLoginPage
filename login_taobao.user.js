@@ -1,9 +1,6 @@
-/**
- * Created by wk on 16/11/11.
- */
 // ==UserScript==
 // @name        淘宝 登录页 taobao login
-// @namespace   wk7113@gmail.com
+// @namespace   wk
 // @description 页面加载完成后自动加载二维码
 // @updateURL   https://github.com/4thleaf/CSS_For_TaobaoLoginPage/raw/master/login_taobao.meta.js
 // @downloadURL https://github.com/4thleaf/CSS_For_TaobaoLoginPage/raw/master/login_taobao.user.js
