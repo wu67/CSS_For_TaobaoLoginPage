@@ -1,0 +1,10 @@
+@-moz-document domain("login.tmall.com") {
+    #J_loginIframe, .J_form {
+        width: 700px !important;
+    }
+
+    /* 广域广告链接 */
+    #J_100 .inner a {
+        display: none;
+    }
+}

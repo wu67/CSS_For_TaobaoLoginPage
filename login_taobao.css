@@ -32,6 +32,11 @@
         right: 120px;
     }
 
+    /* 主要作用于天猫登录页的登录表单，此处对淘宝登录影响不大*/
+    .bd {
+        width: 650px;
+    }
+
     #J_LoginBox {
         border-radius: 1em;
         position: absolute;
@@ -58,8 +63,6 @@
     /*   将二维码登录移动至容器右上角 */
     .quick-form {
         width: 300px;
-        position: absolute;
-        top: 20px;
-        right: 0;
+        float: right !important;
     }
 }
