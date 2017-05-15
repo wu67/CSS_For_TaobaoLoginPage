@@ -1,7 +1,7 @@
 @-moz-document domain("login.taobao.com") {
     /*     登录页背景图片 */
     div.login-newbg {
-        background-image: url("http://img.wallpaperfolder.com/f/4A7157C443C4/raquo-blog-archive-el.jpg") !important;
+        background-image: url("http://wx3.sinaimg.cn/large/0065PkNmgy1ffm1ccv8scj31kw0zke82.jpg") !important;
     }
 
     /*   页面主体,缩小+移位+毛玻璃框+盒阴影 */
@@ -13,16 +13,6 @@
         height: 490px !important;
         position: absolute;
         top: 45px;
-    }
-
-    div.content-layout::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        filter: blur(20px);
     }
 
     /*   扩宽登录表单容器并更改其位置 */
